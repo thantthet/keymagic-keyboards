@@ -1,4 +1,4 @@
-# Keymagic Keyboards
+# KeyMagic Keyboards
 Collection of KeyMagic Keyboard Layouts
 
 * Some keyboards are officially maintained by KeyMagic project
