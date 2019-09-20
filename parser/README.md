@@ -1,0 +1,1 @@
+This directory contains pre-compiled parser that can compile kms files to km2 files
