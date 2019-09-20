@@ -8,6 +8,7 @@ Collection of KeyMagic Keyboard Layouts
 # Submitting new keyboard
 
 ### Terms
+* You are owner of the keyboard you are submitting or authorized person to submit.
 * You may submit `km2` file with or without `kms` file.
 * By submitting your keyboard, you are granting permissions to us to host your keyboard and redistribute the `km2` file you are submitting.
 * If you are submitting along with `kms` source file, you are granting permissions to us to modify and redistribute the `kms` file you are submitting.
