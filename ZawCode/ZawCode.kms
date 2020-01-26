@@ -305,6 +305,9 @@ U1036 + $udiaU[*] => $2 + $1
 $ldiaU[*] + U1036 + $udiaU[*] => $3 + $1 + $2
 
 U1031 + U1039 + $consU[*] => U1039 + $3 + U1031
+
+// kinzi reordering
+
 $consU[*] + U103B + U1031 + $kinzi => $kinzi + $1 + $2 + $3
 $consU[*] + U1039 + $kinzi + $consU[*] =>  $kinzi + $1 + $2 + $4
 $consU[*] + U1039 + $consU[*] + U102F + $kinzi => $kinzi + $1 + $2 + $3 + $4
@@ -320,6 +323,15 @@ $U2D2E[*] + U103E => $2 + $1
 $U2D2E[*] + U103D => $2 + $1
 
 $nbsp + U1031 + U103F => $3 + $2
+
+// kinzi auto correction
+// eg. အကျီင်္ to အင်္ကျီ
+// eg. အကျင်္ီ to အင်္ကျီ
+$consU[*]+U103B+$U2D2E[*]+$kinzi => $kinzi+$1+$2+$3
+$consU[*]+U103B+$kinzi+$U2D2E[*] => $kinzi+$1+$2+$4
+
+// eg.ကီင်္ => င်္ကီ
+$consU[*]+$U2D2E[*]+$kinzi => $kinzi+$1+$2
 
 // double tap
 
