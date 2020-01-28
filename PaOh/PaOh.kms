@@ -1,7 +1,7 @@
 // @NAME = "PaOh"
 // @FONTFAMILY = "Myanmar3"
 // @DESCRIPTION = "base on MyanSan Mobile Keyboard"
-// @ICON = "Myanmar3.bmp"
+// @ICON = "../Myanmar3/Myanmar3.bmp"
 // @HOTKEY = "CTRL+ALT+P"
 // @TRACK_CAPSLOCK = "FALSE"
 // @EAT_ALL_UNUSED_KEYS = "TRUE"
