@@ -5,6 +5,11 @@ Collection of KeyMagic Keyboard Layouts
 * Some keyboards are user submitted and not maintained by KeyMagic Project
 * Some keyboards are provided along with source (kms)
 
+# Creating new keyboards
+
+* See [keyboard scripting guide][4]
+* Create km2 file using [kEditor][5] (Find kEditor download link in downloads page)
+
 # Submitting new keyboard
 
 ### Terms
@@ -13,10 +18,6 @@ Collection of KeyMagic Keyboard Layouts
 * By submitting your keyboard, you are granting permissions to us to host your keyboard and redistribute the `km2` file you are submitting.
 * If you are submitting along with `kms` source file, you are granting permissions to us to modify and redistribute the `kms` file you are submitting.
 
-[1]: https://github.com/thantthet/keymagic-keyboards/pulls
-[2]: https://help.github.com/en/articles/fork-a-repo#fork-an-example-repository
-[3]: https://help.github.com/en/articles/creating-a-pull-request-from-a-fork
-
 ### Submitting
 > You need to know basic Git knowledge for submitting keyboards
 
@@ -24,3 +25,9 @@ Collection of KeyMagic Keyboard Layouts
 2. Create new directory with keyboard name in cloned repository
 3. Make git commit for new keyboard files.
 3. Create a new [Pull Request][1] <sup>[how-to][3]</sup> to submit a new keyboard.
+
+[1]: https://github.com/thantthet/keymagic-keyboards/pulls
+[2]: https://help.github.com/en/articles/fork-a-repo#fork-an-example-repository
+[3]: https://help.github.com/en/articles/creating-a-pull-request-from-a-fork
+[4]: https://github.com/thantthet/keymagic/wiki/Guide-to-layout-scripting
+[5]: https://keymagic.net/downloads/
