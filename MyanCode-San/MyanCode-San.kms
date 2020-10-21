@@ -177,12 +177,6 @@ $sign_ri = "ၖ"
 $sign_rii = "ၗ"
 $sign_lri = "ၘ"
 $sign_lrii = "ၙ"
-$potema = "။"
-//$consU = U1000 + U1001 + U1002 + U1003 + U1004 + U1005 + U1006 + U1007 + \
-//	U1008 + U1009 + U100A + U100B + U100C + U100D + U100E + U100F + \
-//	U1010 + U1011 + U1012 + U1013 + U1014 + U1015 + U1016 + U1017 + \
-//	U1018 + U1019 + U101A + U101B + U101C + U101D + U101E + U101F + \
-//	U1020 + U1021 + U103F
 
 // RE-ORDER
 $nbsp + U1031 + U100B + U1039 + U100C => $3 + $4 + $5 + $2
@@ -211,12 +205,6 @@ $consU[*] + U1031 + $kinzi => $kinzi + $1 + U1031
 
 // case like eain-dray (ဣန္နြေ)
 $consU[*] + U103C + U1031 + U1039 + $consU[*] => $1 + U1039 + $5 + U103C + U1031
-
-// ဦ => ဦ
-// U1025 + U102E => U1026
-// သ + ြ => ဩ
-// U101E + U103C => U1029
-// U101E + U103C + U1031 + U102C + U103A => U102A //aww
 
 // prevent roung order input
 $yapint = U103B
@@ -249,5 +237,7 @@ $sign_rii + $sign_rii => U1053
 $sign_lri + $sign_lri => U1054
 $sign_lrii + $sign_lrii => U1055
 
-// some puntutaion
-// $potema + $potema => ","
+// two sinngle quote to double quote
+U2018 + U2018 => U201C
+U2019 + U2019 => U201D
+
