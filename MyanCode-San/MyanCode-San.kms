@@ -1,0 +1,253 @@
+/**
+@NAME = "မြန်ကုဒ် သက္ကတ"
+@FONTFAMILY = "Padauk"
+@DESCRIPTION = "A Custom Unicode Keyboard Layout Support Sanskrit | Pn Daza"
+@ICON = "MyanCode-San.ico"
+@TRACK_CAPSLOCK = "true"
+@EAT_KEYS = "false"
+@US_LAYOUT_BASED = "true"
+@SMART_BACKSPACE = "false"
+@TREAT_CTRL_ALT_AS_RALT = "true"
+**/
+
+$nbsp = U2060
+$kinzi = U200B + U1004 + U103A + U1039
+
+<VK_NUMPAD0 & VK_CAPSLOCK> => U1040
+<VK_NUMPAD1 & VK_CAPSLOCK> => U1041
+<VK_NUMPAD2 & VK_CAPSLOCK> => U1042
+<VK_NUMPAD3 & VK_CAPSLOCK> => U1043
+<VK_NUMPAD4 & VK_CAPSLOCK> => U1044
+<VK_NUMPAD5 & VK_CAPSLOCK> => U1045
+<VK_NUMPAD6 & VK_CAPSLOCK> => U1046
+<VK_NUMPAD7 & VK_CAPSLOCK> => U1047
+<VK_NUMPAD8 & VK_CAPSLOCK> => U1048
+<VK_NUMPAD9 & VK_CAPSLOCK> => U1049
+
+<VK_NUMPAD0> => U0030
+<VK_NUMPAD1> => U0031
+<VK_NUMPAD2> => U0032
+<VK_NUMPAD3> => U0033
+<VK_NUMPAD4> => U0034
+<VK_NUMPAD5> => U0035
+<VK_NUMPAD6> => U0036
+<VK_NUMPAD7> => U0037
+<VK_NUMPAD8> => U0038
+<VK_NUMPAD9> => U0039
+
+<VK_CFLEX> => "ဩ"
+<VK_CFLEX & VK_SHIFT> => "ဪ"
+<VK_CFLEX & VK_ALT_GR> => "ရ်္"
+<VK_CFLEX & VK_SHIFT & VK_ALT_GR> => U007E
+<VK_KEY_1> => "၁"
+<VK_KEY_1 & VK_SHIFT> => "ဍ"
+<VK_KEY_1 & VK_ALT_GR> => "!"
+<VK_KEY_1 & VK_SHIFT & VK_ALT_GR> => "1"
+<VK_KEY_2> => "၂"
+<VK_KEY_2 & VK_SHIFT> => "ဏ္ဍ"
+<VK_KEY_2 & VK_ALT_GR> => "@"
+<VK_KEY_2 & VK_SHIFT & VK_ALT_GR> => "2"
+<VK_KEY_3> => "၃"
+<VK_KEY_3 & VK_SHIFT> => "ဋ"
+<VK_KEY_3 & VK_ALT_GR> => "#"
+<VK_KEY_3 & VK_SHIFT & VK_ALT_GR> => "3"
+<VK_KEY_4> => "၄"
+<VK_KEY_4 & VK_SHIFT> => "၎"
+<VK_KEY_4 & VK_ALT_GR> => "$"
+<VK_KEY_4 & VK_SHIFT & VK_ALT_GR> => "4"
+<VK_KEY_5> => "၅"
+<VK_KEY_5 & VK_SHIFT> => U0025
+<VK_KEY_5 & VK_ALT_GR> => "%" // same as shift state
+<VK_KEY_5 & VK_SHIFT & VK_ALT_GR> => "5"
+<VK_KEY_6> => "၆"
+<VK_KEY_6 & VK_SHIFT> => U002f
+<VK_KEY_6 & VK_ALT_GR> => "^"
+<VK_KEY_6 & VK_SHIFT & VK_ALT_GR> => "6"
+<VK_KEY_7> => "၇"
+<VK_KEY_7 & VK_SHIFT> => "ရ"
+<VK_KEY_7 & VK_ALT_GR> => U0026
+<VK_KEY_7 & VK_SHIFT & VK_ALT_GR> => "7"
+<VK_KEY_8> => "၈"
+<VK_KEY_8 & VK_SHIFT> => "ဂ"
+<VK_KEY_8 & VK_ALT_GR> => "*"
+<VK_KEY_8 & VK_SHIFT & VK_ALT_GR> => "8"
+<VK_KEY_9> => "၉"
+<VK_KEY_9 & VK_SHIFT> => U0028
+<VK_KEY_0> => "၀"
+<VK_KEY_0 & VK_SHIFT> => U0029
+<VK_OEM_MINUS> => U002d
+<VK_OEM_MINUS & VK_SHIFT> => U00d7
+<VK_OEM_MINUS & VK_ALT_GR> => U005F
+<VK_OEM_PLUS> => U003d  
+<VK_OEM_PLUS & VK_SHIFT> => U002b
+
+<VK_KEY_Q> => "ဆ"
+<VK_KEY_Q & VK_SHIFT> => "ဈ"
+<VK_KEY_W> => "တ"
+<VK_KEY_W & VK_SHIFT> => "ဝ"
+<VK_KEY_E> => "န"
+<VK_KEY_E & VK_SHIFT> => "ဣ"
+<VK_KEY_R> => "မ"
+<VK_KEY_R & VK_SHIFT> => "ဤ"
+<VK_KEY_T> => "အ"
+<VK_KEY_T & VK_SHIFT> => "၍"
+<VK_KEY_Y> => "ပ"
+<VK_KEY_Y & VK_SHIFT> => "၌"
+<VK_KEY_U> => "က"
+<VK_KEY_U & VK_SHIFT> => "ဥ"
+<VK_KEY_I> => "င"  
+<VK_KEY_I & VK_SHIFT> => "ဦ"
+<VK_KEY_O> => "သ"
+<VK_KEY_O & VK_SHIFT> => "ဿ"
+<VK_KEY_P> => "စ"
+<VK_KEY_P & VK_SHIFT> => "ဏ"
+<VK_LBRACKET> => "ဟ"
+<VK_LBRACKET & VK_SHIFT> => "ဧ"
+<VK_LBRACKET & VK_ALT_GR> => "["
+<VK_LBRACKET & VK_SHIFT & VK_ALT_GR> => "{"
+<VK_RBRACKET> => U2018
+<VK_RBRACKET & VK_SHIFT> => U2019
+<VK_RBRACKET & VK_ALT_GR> => "]"
+<VK_RBRACKET & VK_SHIFT & VK_ALT_GR> => "}"
+
+<VK_KEY_A> => $nbsp + U1031
+<VK_KEY_A & VK_ALT> => U1031
+<VK_KEY_A & VK_SHIFT> => "ဗ"
+<VK_KEY_S> => "ျ"
+<VK_KEY_S & VK_SHIFT> => "ှ"
+<VK_KEY_D> => "ိ"
+<VK_KEY_D & VK_SHIFT> => "ီ"
+<VK_KEY_F> => "်"
+<VK_KEY_F & VK_SHIFT> => "္"
+<VK_KEY_G> => "ါ"
+<VK_KEY_G & VK_SHIFT> => "ွ"
+<VK_KEY_H> => "့"
+<VK_KEY_H & VK_SHIFT> => "ံ"
+<VK_KEY_J> => "ြ"
+<VK_KEY_J & VK_SHIFT> => "ဲ"
+<VK_KEY_K> => "ု"
+<VK_KEY_K & VK_SHIFT> => "ၐ"
+<VK_KEY_L> => "ူ"
+<VK_KEY_L & VK_SHIFT> => "ၑ"
+<VK_COLON> => "း"
+<VK_COLON & VK_SHIFT> => "ၖ"
+<VK_COLON & VK_ALT_GR> => U003B
+<VK_COLON & VK_SHIFT & VK_ALT_GR> => U003A
+<VK_QUOTE> => "ဒ"
+<VK_QUOTE & VK_SHIFT> => "ဓ"
+<VK_QUOTE & VK_ALT_GR> => U0027
+<VK_QUOTE & VK_SHIFT & VK_ALT_GR> => U0022
+<VK_OEM_5> => "၏"
+<VK_OEM_5 & VK_SHIFT> => "ဋ္ဌ"
+
+<VK_KEY_Z> => "ဖ"
+<VK_KEY_Z & VK_SHIFT> => "ဇ"
+<VK_KEY_X> => "ထ"
+<VK_KEY_X & VK_SHIFT> => "ဌ"
+<VK_KEY_C> => "ခ"
+<VK_KEY_C & VK_SHIFT> => "ဃ"
+<VK_KEY_V> => "လ"
+<VK_KEY_V & VK_SHIFT> => "ဠ"
+<VK_KEY_B> => "ဘ"
+<VK_KEY_B & VK_SHIFT> => "ဎ"
+<VK_KEY_N> => "ည"
+<VK_KEY_N & VK_SHIFT> => "ဉ"
+<VK_KEY_M> => "ာ"
+<VK_KEY_M & VK_SHIFT> => "ၗ"
+<VK_KEY_M & VK_ALT> => "ၓ"
+<VK_OEM_COMMA> => "ယ"
+<VK_OEM_COMMA & VK_SHIFT> => "ၘ"
+<VK_OEM_COMMA & VK_ALT_GR> => U002C
+<VK_OEM_COMMA & VK_SHIFT & VK_ALT_GR> => U003C
+<VK_OEM_PERIOD> => U002e
+<VK_OEM_PERIOD & VK_SHIFT> => "ၙ"
+<VK_OEM_PERIOD & VK_ALT_GR> => U003E
+<VK_OEM_PERIOD & VK_SHIFT & VK_ALT_GR> => U003E // same altgr
+<VK_QUESTION> => "။"
+<VK_QUESTION & VK_SHIFT> => "၊"
+<VK_QUESTION & VK_ALT_GR> => U002F // same as shift + 6
+<VK_QUESTION & VK_SHIFT & VK_ALT_GR> => U003F
+//<VK_SPACE> => U0020 // This will prevent from commiting composition string when press space
+//<VK_SPACE & VK_SHIFT> => U0020
+//<VK_DECIMAL> => U002e
+//<VK_DECIMAL & VK_SHIFT> => U002e
+
+$consU = "ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအဿၐၑ"
+$sign_ri = "ၖ"
+$sign_rii = "ၗ"
+$sign_lri = "ၘ"
+$sign_lrii = "ၙ"
+$potema = "။"
+//$consU = U1000 + U1001 + U1002 + U1003 + U1004 + U1005 + U1006 + U1007 + \
+//	U1008 + U1009 + U100A + U100B + U100C + U100D + U100E + U100F + \
+//	U1010 + U1011 + U1012 + U1013 + U1014 + U1015 + U1016 + U1017 + \
+//	U1018 + U1019 + U101A + U101B + U101C + U101D + U101E + U101F + \
+//	U1020 + U1021 + U103F
+
+// RE-ORDER
+$nbsp + U1031 + U100B + U1039 + U100C => $3 + $4 + $5 + $2
+$nbsp + U1031 + U100F + U1039 + U100D => $3 + $4 + $5 + $2
+
+$nbsp + U1031 + $consU[*] => $consU[$3] + $2
+U1031 + U1039 + $consU[*] => U1039 + $3 + U1031
+
+$sdiaU = U103B + U103C + U103E + U103D 
+
+U1031 + $sdiaU[*] => $2 + $1
+U1031 + $sdiaU[*] + $sdiaU[*] => $2 + $3 + $1
+U1031 + $sdiaU[*] + $sdiaU[*] + $sdiaU[*] => $2 + $3 + $4 + $1
+
+//out-ka-myin <-> a-thet
+//U103A + U1037 => $2 + $1
+
+// double tap for kinzi
+U103A + U103A => $kinzi
+
+//kinzi reordering
+$consU[*] + $kinzi => $kinzi + $1
+$consU[*] + U103B + $kinzi => $kinzi + $1 + U103B
+$consU[*] + U103C + $kinzi => $kinzi + $1 + U103C
+$consU[*] + U1031 + $kinzi => $kinzi + $1 + U1031
+
+// case like eain-dray (ဣန္နြေ)
+$consU[*] + U103C + U1031 + U1039 + $consU[*] => $1 + U1039 + $5 + U103C + U1031
+
+// ဦ => ဦ
+// U1025 + U102E => U1026
+// သ + ြ => ဩ
+// U101E + U103C => U1029
+// U101E + U103C + U1031 + U102C + U103A => U102A //aww
+
+// prevent roung order input
+$yapint = U103B
+$yayint = U103C
+$waswe = U103D
+$hahtoe = U103E
+
+$lonegyitin = U102D
+$lonegyitinsankhat = U102E
+$tachaungngin = U102F
+$nhachaungngin = U1030
+
+$noutpyint = U1032
+$taetaetin = U1036
+$outmyint = U1037
+
+$waswe + $yapint => null
+$hahtoe + $yapint => null
+$hahtoe + $waswe => null
+
+$lonegyitin + $yapint => null
+$lonegyitinsankhat + $yapint => null
+
+$tachaungngin + $lonegyitin => null
+
+// sanskrit
+// we prefer double tap instead of alt combination
+$sign_ri + $sign_ri => U1052
+$sign_rii + $sign_rii => U1053
+$sign_lri + $sign_lri => U1054
+$sign_lrii + $sign_lrii => U1055
+
+// some puntutaion
+// $potema + $potema => ","
