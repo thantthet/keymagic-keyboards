@@ -160,6 +160,13 @@ $wDiaU[*] + $hDiaU[*] + u1031 + $rDiaU[*] => $4 + $1 + $2 + $3
 //out-ka-myin <-> a-thet
 U103A + U1037 => $2 + $1
 
+// auto correct
+
+// စျ => ဈ
+U1005 + U103B => U1008
+// စျေ => ဈေ
+U1005 + U103B + U1031 => U1008 + U1031
+
 // Novasteps Edit Start
 
 < VK_SHIFT & VK_KEY_4 > => U1000 + U103B + U1015 + U103A

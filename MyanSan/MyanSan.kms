@@ -126,7 +126,7 @@ u1037 + $aaK[*] => $aaU[$2] + $1
 u1038 + $lDotK[*] => $lDotU[$2] + $1
 //u103A + 'h' => u1037 + u103A
 
-$ldiaK[*] => $ldiaU[$1]
+$ldiaK[*]  => $ldiaU[$1]
 $udia1K[*] => $udia1U[$1]  
 $udia2K[*] => $udia2U[$1]
 
@@ -159,6 +159,13 @@ $mediaK[*] => $mediaU[$1]
 
 //out-ka-myin <-> a-thet
 U103A + U1037 => $2 + $1
+
+// auto correct
+
+// စျ => ဈ
+U1005 + U103B => U1008
+// စျေ => ဈေ
+U1005 + U103B + U1031 => U1008 + U1031
 
 // Novasteps Edit Start
 
