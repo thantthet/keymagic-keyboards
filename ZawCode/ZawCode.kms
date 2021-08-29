@@ -284,9 +284,14 @@ U1025 + U103A => U1009 + U103A
 U1025 + U102C => U1009 + U102C 
 U1025 + U1039 + $consU[*] => U1009 + $2 + $3
 
+// စျ => ဈ
 U1005 + U103B => U1008
+// စျေ => ဈေ
+U1005 + U103B + U1031 => U1008 + U1031
+// သြ => ဩ
 U101E + U103C => U1029
-U101E + U103C + U1031 + U102C + U103A => U102A //aww
+// သြော် => ဪ
+U101E + U103C + U1031 + U102C + U103A => U102A
 
 // create some classes for diacritics that might have been 
 // sensibly typed before the user types the medial
@@ -329,6 +334,7 @@ $nbsp + U1031 + U103F => $3 + $2
 // eg. အကျင်္ီ to အင်္ကျီ
 $consU[*]+U103B+$U2D2E[*]+$kinzi => $kinzi+$1+$2+$3
 $consU[*]+U103B+$kinzi+$U2D2E[*] => $kinzi+$1+$2+$4
+
 
 // eg.ကီင်္ => င်္ကီ
 $consU[*]+$U2D2E[*]+$kinzi => $kinzi+$1+$2
