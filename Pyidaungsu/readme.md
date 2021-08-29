@@ -1,4 +1,4 @@
-Copied from [Original Post](https://unicodetoday.org/)
+> copied from [Original Post](https://unicodetoday.org/keyboard/2019/03/05/pyidaungsu-mm-typing.html) for convenience.
 
 # Pyidaungsu MM လက်ကွက် စာရိုက်နည်း
 
@@ -6,9 +6,11 @@ Copied from [Original Post](https://unicodetoday.org/)
 
 ## လက်ကွက် ဇယား
 
+#### Normal
 ![keyboard layout](https://github.com/thantthet/keymagic-keyboards/blob/master/Pyidaungsu/pyidaungsu_mm.png)
 
-shift
+#### Shifted
+
 ![shifted keyboard layout](https://github.com/thantthet/keymagic-keyboards/blob/master/Pyidaungsu/pyidaungsu_mm_S.png)
 
 
