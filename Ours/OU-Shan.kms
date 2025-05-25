@@ -1,5 +1,5 @@
 /*
-@NAME = "Ours-Unicode-Shan"
+@NAME = "Ours-Unicode-Shan 2025"
 @FONTFAMILY = "Ours-Unicode"
 @DESCRIPTION = "A Unicode Keyboard Layout that can be type the same as normal  Shan Unicode. | Ours-Uni-Team"
 @_ICON = "shan.png"
@@ -107,7 +107,7 @@ U200B + U1084 + <VK_BACK> => null
 <VK_KEY_D & VK_SHIFT> =>  U102E
 <VK_KEY_F & VK_SHIFT> =>  U1082 + U103A
 <VK_KEY_G & VK_SHIFT> =>  U1082
-<VK_KEY_H & VK_SHIFT> =>  U1037
+<VK_KEY_H & VK_SHIFT> =>  U1036
 <VK_KEY_J & VK_SHIFT> =>  U1086
 <VK_KEY_K & VK_SHIFT> =>  UA9E6
 <VK_KEY_L & VK_SHIFT> =>  U108A
@@ -162,9 +162,9 @@ U200B + U1084 + <VK_BACK> => null
 
 
 //	Reorder Dot Below  
-U103A + <VK_SHIFT & VK_KEY_H> =>  U1037 + U103A                                    
-U1037 + U103A + <VK_BACK> =>  U103A  
-U1082 + U103A + <VK_SHIFT & VK_KEY_H> =>  U1082 + U103A + U1037
+U103A + <VK_SHIFT & VK_KEY_H> =>  U1036 + U103A                                    
+U1036 + U103A + <VK_BACK> =>  U103A  
+U1082 + U103A + <VK_SHIFT & VK_KEY_H> =>  U1082 + U103A + U1036
 
 //	Delete Kangking
 U1082 + U103A + <VK_BACK> => null   
@@ -343,7 +343,10 @@ U1082 +  U1084 + <VK_BACK> =>  U200B + U1084 	//	 medial wa shan
 
 U102F + <VK_KEY_D> =>  U102D + U102F
 U1030 + <VK_KEY_D> =>  U102D + U1030 
+// ႆ + ၢ = ၢ ႆ
 U1086 + <VK_KEY_M> =>  U1062 + U1086 
+//  ၢ + ံ = ၢံ
+U1062+ U1036 =>  U1036 + U1062
 U1082 + U1086 +  <VK_KEY_M> => U1082 + U1062 + U1086
 //	;U102D + U102F + <VK_BACK> => U102F
 //	;U102D + U1030 + <VK_BACK> => U1030
