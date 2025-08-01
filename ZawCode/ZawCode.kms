@@ -1,8 +1,8 @@
 /*
 @NAME = "ဇော်ကုဒ်"
 @FONTFAMILY = "TharLon"
-@DESCRIPTION = "A Unicode Keyboard Layout that can be type the same sequence just like normal ZawgyiL Layout but its output is Unicode. | Thant Thet Khin Zaw"
-@ICON = "Zawgyi L - Unicode.png"
+@DESCRIPTION = "A Unicode Keyboard Layout that can be type the same sequence just like normal ZawGyi layout but the output is Unicode."
+@ICON = "Zawgyi.png"
 @HOTKEY = "CTRL + SHIFT + Z"
 @TRACK_CAPSLOCK = "false"
 @EAT_KEYS = "true"
@@ -10,7 +10,7 @@
 @SMART_BACKSPACE = "true"
 */
 
-$nbsp = U200b
+$nbsp = U200A
 
 $kinzi = U1004 + U103A + U1039
 
