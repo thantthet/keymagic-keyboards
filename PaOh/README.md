@@ -11,6 +11,7 @@ The default layout included with KeyMagic.
 > This layout does not support Pa'O digits.
 
 ### PaO (Standard)
+![Pa'O Keyboard Layout](Keyboard%20Layout.jpg)
 
 This layout is based on the widely-used PaOh Myanmar Unicode keyboard layout by Khun Soe Zaw Thu, popular among Pa'O Windows users. This version includes support for Pa'O digits.
 
