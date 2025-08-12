@@ -1,0 +1,218 @@
+/*
+@NAME = "Sgaw Karen (Kawthoolei)"
+@DESCRIPTION = "Sgaw Karen Kawthoolei keyboard layout with smart shortcuts and ligatures"
+@ICON = "ksw.png"
+@TRACK_CAPSLOCK = "FALSE"
+@EAT_KEYS = "TRUE"
+@US_LAYOUT_BASED = "TRUE"
+@SMART_BACKSPACE = "TRUE"
+@TREAT_CTRL_ALT_AS_RALT = "TRUE"
+*/
+
+// Variables for Sgaw Karen character sets
+$myanmar_digits = U1041 + U1042 + U1043 + U1044 + U1045 + U1046 + U1047 + U1048 + U1049 + U1040
+$latin_digits = '1234567890'
+
+// Sgaw Karen specific characters
+$sgaw_sha = U1061      // ၡ
+$sgaw_eu = U1062       // ၢ
+$sgaw_hathi = U1063    // ၣ
+$sgaw_kepho = U1064    // ၤ
+$sgaw_tha = U1065      // ၥ
+$sgaw_pwa = U1066      // ၦ
+
+// Complex Sgaw Karen combinations from KLC ligatures
+$da_asat = U1012 + U103A                    // ဒ်
+$ma_asat = U1019 + U103A                    // မ်
+$eu_eu_asat = U1062 + U1062 + U103A         // ၢၢ်
+$la_ii_kepho = U101C + U102E + U1064        // လီၤ
+$tha_asat = U1065 + U103A                   // ၥ်
+$na_dot_hathi_asat = U1014 + U1037 + U1063 + U103A  // န့ၣ်
+$da_ii_visarga = U1012 + U102E + U1038      // ဒီး
+$hathi_asat = U1063 + U103A                 // ၣ်
+$eu_asat = U1062 + U103A                    // ၢ်
+$eu_tha_asat = U1062 + U1065 + U103A        // ၢၥ်
+$eu_hathi_asat = U1062 + U1063 + U103A      // ၢၣ်
+$ya_kepho = U101A + U1064                   // ယၤ
+$pwa_kepho = U1066 + U1064                  // ၦၤ
+
+// Number keys - Myanmar digits
+<VK_KEY_1> => U1041    // ၁
+<VK_KEY_2> => U1042    // ၂
+<VK_KEY_3> => U1043    // ၃
+<VK_KEY_4> => U1044    // ၄
+<VK_KEY_5> => U1045    // ၅
+<VK_KEY_6> => U1046    // ၆
+<VK_KEY_7> => U1047    // ၇
+<VK_KEY_8> => U1048    // ၈
+<VK_KEY_9> => U1049    // ၉
+<VK_KEY_0> => U1040    // ၀
+
+// Base consonants (lowercase) - Following KLC exactly
+<VK_KEY_Q> => U1006    // ဆ
+<VK_KEY_W> => U1010    // တ
+<VK_KEY_E> => U1014    // န
+<VK_KEY_R> => U1019    // မ
+<VK_KEY_T> => U1021    // အ
+<VK_KEY_Y> => U1015    // ပ
+<VK_KEY_U> => U1000    // က
+<VK_KEY_I> => U1004    // င
+<VK_KEY_O> => U101E    // သ
+<VK_KEY_P> => U1005    // စ
+
+// Special handling for A key based on KLC ligatures
+<VK_KEY_A> => U1012 + U103A    // ဒ် (da + asat)
+<VK_KEY_S> => U103B            // ျ
+<VK_KEY_D> => U102D            // ိ
+<VK_KEY_F> => U103A            // ်
+<VK_KEY_G> => U102B            // ါ
+<VK_KEY_H> => U1037            // ့
+<VK_KEY_J> => U103C            // ြ
+<VK_KEY_K> => U102F            // ု
+<VK_KEY_L> => U1030            // ူ
+
+<VK_KEY_Z> => U1016    // ဖ
+<VK_KEY_X> => U1011    // ထ
+<VK_KEY_C> => U1001    // ခ
+<VK_KEY_V> => U101C    // လ
+<VK_KEY_B> => U1018    // ဘ
+<VK_KEY_N> => U1009    // ည (changed from ဉ to match KLC)
+// Special handling for M key based on KLC
+<VK_KEY_M> => U1065 + U103A    // ၥ် (tha + asat)
+
+// Shift layer - Sgaw Karen specific characters
+<VK_KEY_Q & VK_SHIFT> => U1061             // ၡ (Sgaw Karen sha)
+<VK_KEY_W & VK_SHIFT> => U101D             // ဝ
+<VK_KEY_E & VK_SHIFT> => U1062 + U1062 + U103A  // ၢၢ် (eu + eu + asat)
+<VK_KEY_R & VK_SHIFT> => U1064             // ၤ (Sgaw Karen kepho)
+<VK_KEY_T & VK_SHIFT> => U1062 + U1065 + U103A  // ၢၥ် (eu + tha + asat)
+<VK_KEY_Y & VK_SHIFT> => U1062 + U1063 + U103A  // ၢၣ် (eu + hathi + asat)
+<VK_KEY_U & VK_SHIFT> => U103D + U1037     // ွ့
+<VK_KEY_I & VK_SHIFT> => U002E             // .
+<VK_KEY_O & VK_SHIFT> => U103E + U102F     // ှု
+<VK_KEY_P & VK_SHIFT> => U1066             // ၦ (Sgaw Karen pwa)
+
+<VK_KEY_A & VK_SHIFT> => U1019 + U103A     // မ် (ma + asat)
+<VK_KEY_S & VK_SHIFT> => U103E             // ှ
+<VK_KEY_D & VK_SHIFT> => U102E             // ီ
+<VK_KEY_F & VK_SHIFT> => U1060             // ၠ
+<VK_KEY_G & VK_SHIFT> => U103D             // ွ
+<VK_KEY_H & VK_SHIFT> => U1036             // ံ
+<VK_KEY_J & VK_SHIFT> => U1032             // ဲ
+<VK_KEY_K & VK_SHIFT> => U1012             // ဒ
+<VK_KEY_L & VK_SHIFT> => U101C + U102E + U1064  // လီၤ
+
+<VK_KEY_Z & VK_SHIFT> => U1007             // ဇ
+<VK_KEY_X & VK_SHIFT> => U1062             // ၢ (Sgaw Karen eu)
+<VK_KEY_C & VK_SHIFT> => U1003             // ဃ
+<VK_KEY_V & VK_SHIFT> => U103B + U1037     // ျ့
+<VK_KEY_B & VK_SHIFT> => U103E + U1037     // ှ့
+<VK_KEY_N & VK_SHIFT> => U1065             // ၥ (Sgaw Karen tha)
+<VK_KEY_M & VK_SHIFT> => U1014 + U1037 + U1063 + U103A  // န့ၣ်
+
+// Special characters and punctuation - Following KLC
+<VK_SHIFT & VK_KEY_7> => U101B    // ရ (&)
+<VK_SHIFT & VK_KEY_8> => U1002    // ဂ (*)
+<VK_OEM_4> => U101F               // ဟ ([)
+<VK_OEM_6> => U105C               // ၜ (])
+<VK_OEM_5> => U0027               // ' (\)
+<VK_OEM_1> => U1038               // း (;)
+<VK_OEM_7> => U104A               // ၊ (')
+<VK_OEM_1 & VK_SHIFT> => U1012 + U102E + U1038  // ဒီး (:)
+<VK_OEM_7 & VK_SHIFT> => U104B    // ။ (")
+<VK_OEM_COMMA> => U101A           // ယ (,)
+<VK_OEM_PERIOD> => U1063 + U103A  // ၣ် (.)
+<VK_OEM_COMMA & VK_SHIFT> => U002C  // , (<)
+<VK_OEM_PERIOD & VK_SHIFT> => U1062 + U103A  // ၢ် (>)
+
+<VK_SPACE> => U0020               // space
+
+
+
+U1062 + U1062 + 'f' => U1062 + U1062 + U103A  // ၢၢ်
+U1062 + U1063 + 'f' => U1062 + U1063 + U103A  // ၢၣ်
+U1062 + U1065 + 'f' => U1062 + U1065 + U103A  // ၢၥ်
+U1063 + 'f' => U1063 + U103A      // ၣ်
+U1062 + 'f' => U1062 + U103A      // ၢ်
+
+// Medial consonant + dot combinations
+U103E + U1037 => U103E + U1037    // ှ့
+U103B + U1037 => U103B + U1037    // ျ့
+U103D + U1037 => U103D + U1037    // ွ့
+
+// Special ligature combinations
+U103E + U102F => U103E + U102F    // ှု
+U103E + U1030 => U103E + U1030    // ှူ
+
+// Diacritic ordering for Sgaw Karen
+U102F + U102D => U102D + U102F    // ုိ -> ို
+U1030 + U102D => U102D + U1030    // ူိ -> ိူ
+U1037 + U1063 => U1037 + U1063    // ့ၣ (correct order)
+U1037 + U1064 => U1037 + U1064    // ့ၤ (correct order)
+
+// Medial consonant ordering
+U103D + U103B => U103B + U103D    // ွျ -> ျွ
+U103E + U103B => U103B + U103E    // ှျ -> ျှ
+U103E + U103C => U103C + U103E    // ှြ -> ြှ
+U103D + U103C => U103C + U103D    // ွြ -> ြွ
+
+// E-vowel positioning with Sgaw Karen characters
+U1031 + U103B => U103B + U1031    // ေျ -> ျေ
+U1031 + U103C => U103C + U1031    // ေြ -> ြေ
+U1031 + U103D => U103D + U1031    // ေွ -> ွေ
+U1031 + U103E => U103E + U1031    // ေှ -> ှေ
+
+// Common Sgaw Karen words (commented as demo template)
+// 'karen' => U1000 + U102C + U101B + U1004 + U103A      // ကာရင်
+// 'sgaw' => U1006 + U1004 + U102C + U103D              // ဆင်းွ
+// 'kawthoolei' => U1000 + U1031 + U102C + U1011 + U1030 + U101C + U102D  // ကေါထူလိ
+
+// Cultural and contextual terms (commented as demo template)
+// 'thoolei' => U1011 + U1030 + U101C + U102D            // ထူလိ
+// 'paw' => U1015 + U1031 + U102C                       // ပေါ
+// 'mu' => U1019 + U102F                                // မု
+
+// // Numbers in context
+// '1st' => U1041 + 'st'
+// '2nd' => U1042 + 'nd'
+// '3rd' => U1043 + 'rd'
+// 
+// // Punctuation shortcuts
+// '...' => U002E + U002E + U002E    // ...
+// '---' => U2014                    // em dash
+// '--' => U2013                     // en dash
+
+// // Smart shortcuts and abbreviations for Sgaw Karen
+// 'TYSM' => "Thank you so much"
+// 'tysm' => "thank you so much"
+// 'KNU' => "Karen National Union"
+// 'knu' => "karen national union"
+// 'KAWTHOOLEI' => "Kawthoolei"
+// 'kawthoolei' => "kawthoolei"
+// 'KWTHOOLEI' => "Kawthoolei"
+// 'kwthoolei' => "kawthoolei"
+// 'SGAW' => "Sgaw Karen"
+// 'sgaw' => "sgaw karen"
+// 'KSW' => "Sgaw Karen"
+// 'ksw' => "sgaw karen"
+// 
+// // Sgaw Karen specific character shortcuts
+// 'sha' => U1061    // ၡ
+// 'eu' => U1062     // ၢ
+// 'hathi' => U1063  // ၣ
+// 'kepho' => U1064  // ၤ
+// 'tha' => U1065    // ၥ
+// 'pwa' => U1066    // ၦ
+// 
+// // Complex Sgaw Karen combinations
+// 'eueu' => U1062 + U1062           // ၢၢ
+// 'euhathi' => U1062 + U1063        // ၢၣ
+// 'eutha' => U1062 + U1065          // ၢၥ
+// 'nathi' => U1014 + U1037 + U1063  // န့ၣ
+// 'laiikeho' => U101C + U102E + U1064  // လီၤ
+// 'daii' => U1012 + U102E + U1038   // ဒီး
+// 
+// // Auto-correct for Sgaw Karen ligature patterns from KLC
+// 'da' + 'f' => U1012 + U103A       // ဒ် (da + asat)
+// 'ma' + 'f' => U1019 + U103A       // မ် (ma + asat)
+// 'tha' + 'f' => U1065 + U103A      // ၥ် (tha + asat)

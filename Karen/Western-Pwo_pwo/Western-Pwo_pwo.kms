@@ -1,0 +1,212 @@
+/*
+@NAME = "Western Pwo Karen"
+@DESCRIPTION = "Western Pwo Karen keyboard layout with smart shortcuts"
+@ICON = "pwo.png"
+@TRACK_CAPSLOCK = "FALSE"
+@EAT_KEYS = "TRUE"
+@US_LAYOUT_BASED = "TRUE"
+@SMART_BACKSPACE = "TRUE"
+@TREAT_CTRL_ALT_AS_RALT = "TRUE"
+*/
+
+// Variables for Western Pwo Karen character sets
+$myanmar_digits = U1041 + U1042 + U1043 + U1044 + U1045 + U1046 + U1047 + U1048 + U1049 + U1040
+$latin_digits = '1234567890'
+
+// Western Pwo Karen specific characters
+$wpk_tone1 = U1069    // ၩ
+$wpk_tone2 = U106A    // ၪ  
+$wpk_tone3 = U106B    // ၫ
+$wpk_tone4 = U106C    // ၬ
+$wpk_tone5 = U106D    // ၭ
+$wpk_tha = U1065      // ၥ
+$wpk_pwa = U1066      // ၦ
+$wpk_eu = U1067       // ၧ
+$wpk_ue = U1068       // ၨ
+$wpk_nna = U106E      // ၮ
+$wpk_ywa = U106F      // ၯ
+
+// Number keys - Myanmar digits
+<VK_KEY_1> => U1041    // ၁
+<VK_KEY_2> => U1042    // ၂
+<VK_KEY_3> => U1043    // ၃
+<VK_KEY_4> => U1044    // ၄
+<VK_KEY_5> => U1045    // ၅
+<VK_KEY_6> => U1046    // ၆
+<VK_KEY_7> => U1047    // ၇
+<VK_KEY_8> => U1048    // ၈
+<VK_KEY_9> => U1049    // ၉
+<VK_KEY_0> => U1040    // ၀
+
+// Shift + Numbers (brackets and symbols)
+<VK_KEY_1 & VK_SHIFT> => U005B    // [
+<VK_KEY_2 & VK_SHIFT> => U005D    // ]
+<VK_KEY_3 & VK_SHIFT> => U007B    // {
+<VK_KEY_4 & VK_SHIFT> => U007D    // }
+<VK_KEY_5 & VK_SHIFT> => U0025    // %
+<VK_KEY_6 & VK_SHIFT> => U005E    // ^
+<VK_KEY_7 & VK_SHIFT> => U101B    // ရ
+<VK_KEY_8 & VK_SHIFT> => U002A    // *
+<VK_KEY_9 & VK_SHIFT> => U0028    // (
+<VK_KEY_0 & VK_SHIFT> => U0029    // )
+
+// Base consonants (lowercase)
+<VK_KEY_Q> => U1006    // ဆ
+<VK_KEY_W> => U1010    // တ
+<VK_KEY_E> => U1014    // န
+<VK_KEY_R> => U1019    // မ
+<VK_KEY_T> => U1021    // အ
+<VK_KEY_Y> => U1015    // ပ
+<VK_KEY_U> => U1000    // က
+<VK_KEY_I> => U1004    // င
+<VK_KEY_O> => U1065    // ၥ (Western Pwo Karen tha)
+<VK_KEY_P> => U1005    // စ
+
+<VK_KEY_A> => U1066    // ၦ (Western Pwo Karen pwa)
+<VK_KEY_S> => U103B    // ျ
+<VK_KEY_D> => U102D    // ိ
+<VK_KEY_F> => U103D + U103E    // ွှ (ligature)
+<VK_KEY_G> => U102B    // ါ
+<VK_KEY_H> => U1037    // ့
+<VK_KEY_J> => U103C    // ြ
+<VK_KEY_K> => U102F    // ု
+<VK_KEY_L> => U1030    // ူ
+
+<VK_KEY_Z> => U1016    // ဖ
+<VK_KEY_X> => U1011    // ထ
+<VK_KEY_C> => U1001    // ခ
+<VK_KEY_V> => U101C    // လ
+<VK_KEY_B> => U1018    // ဘ
+<VK_KEY_N> => U100A    // ဉ
+<VK_KEY_M> => U103C    // ြ
+
+// Shift layer - Western Pwo Karen specific characters
+<VK_KEY_Q & VK_SHIFT> => U1012    // ဒ
+<VK_KEY_W & VK_SHIFT> => U101D    // ဝ
+<VK_KEY_E & VK_SHIFT> => U103A    // ်
+<VK_KEY_R & VK_SHIFT> => U1069    // ၩ (Western Pwo Karen tone-1)
+<VK_KEY_T & VK_SHIFT> => U106A    // ၪ (Western Pwo Karen tone-2)
+<VK_KEY_Y & VK_SHIFT> => U106B    // ၫ (Western Pwo Karen tone-3)
+<VK_KEY_U & VK_SHIFT> => U106C    // ၬ (Western Pwo Karen tone-4)
+<VK_KEY_I & VK_SHIFT> => U106D    // ၭ (Western Pwo Karen tone-5)
+<VK_KEY_O & VK_SHIFT> => U1067    // ၧ (Western Pwo Karen eu)
+<VK_KEY_P & VK_SHIFT> => U1068    // ၨ (Western Pwo Karen ue)
+
+<VK_KEY_A & VK_SHIFT> => U1061    // ၡ (Sgaw Karen sha)
+<VK_KEY_S & VK_SHIFT> => U101B    // ရ
+<VK_KEY_D & VK_SHIFT> => U102E    // ီ
+<VK_KEY_F & VK_SHIFT> => U1060    // ၠ
+<VK_KEY_G & VK_SHIFT> => U103D    // ွ
+<VK_KEY_H & VK_SHIFT> => U1036    // ံ
+<VK_KEY_J & VK_SHIFT> => U1032    // ဲ
+<VK_KEY_K & VK_SHIFT> => U102F    // ု
+<VK_KEY_L & VK_SHIFT> => U1030    // ူ
+
+<VK_KEY_Z & VK_SHIFT> => U1007    // ဇ
+<VK_KEY_X & VK_SHIFT> => U1037    // ့
+<VK_KEY_C & VK_SHIFT> => U100E    // ဎ
+<VK_KEY_V & VK_SHIFT> => U1037    // ့
+<VK_KEY_B & VK_SHIFT> => U101A    // ယ
+<VK_KEY_N & VK_SHIFT> => U103D + U1037    // ွ့ (ligature)
+<VK_KEY_M & VK_SHIFT> => U101B + U103D + U103E + U1037    // ရွှ့ (complex ligature)
+
+// Punctuation and special characters
+<VK_OEM_MINUS> => U002D           // -
+<VK_OEM_MINUS & VK_SHIFT> => U005F // _
+<VK_OEM_PLUS> => U003D            // =
+<VK_OEM_PLUS & VK_SHIFT> => U002B // +
+
+<VK_OEM_4> => U101F               // ဟ
+<VK_OEM_4 & VK_SHIFT> => U1027    // ဧ
+<VK_OEM_6> => U103E + U1030       // ှူ (ligature)
+<VK_OEM_6 & VK_SHIFT> => U103E + U102F    // ှု (ligature)
+
+<VK_OEM_1> => U1038               // း
+<VK_OEM_1 & VK_SHIFT> => U1002    // ဂ
+<VK_OEM_7> => U0027               // '
+<VK_OEM_7 & VK_SHIFT> => U0022    // "
+
+<VK_OEM_COMMA> => U002C           // ,
+<VK_OEM_COMMA & VK_SHIFT> => U101B + U103E + U102F    // ရှု (ligature)
+<VK_OEM_PERIOD> => U002E          // .
+<VK_OEM_PERIOD & VK_SHIFT> => U101B + U103E + U1030   // ရှူ (ligature)
+<VK_OEM_2> => U104A               // ၊
+<VK_OEM_2 & VK_SHIFT> => U104B    // ။
+
+<VK_OEM_5> => U005C               // \
+<VK_OEM_5 & VK_SHIFT> => U007C    // |
+
+<VK_SPACE> => U0020               // space
+
+
+
+// Diacritic ordering
+U102F + U102D => U102D + U102F    // ုိ -> ို
+U1030 + U102D => U102D + U1030    // ူိ -> ိူ
+U1037 + U1069 => U1037 + U1069    // ့ၩ (correct order)
+U1037 + U106A => U1037 + U106A    // ့ၪ (correct order)
+
+// Medial consonant ordering
+U103D + U103B => U103B + U103D    // ွျ -> ျွ
+U103E + U103B => U103B + U103E    // ှျ -> ျှ
+U103E + U103C => U103C + U103E    // ှြ -> ြှ
+U103D + U103C => U103C + U103D    // ွြ -> ြွ
+
+// E-vowel positioning with Western Pwo Karen characters  
+U1031 + U103B => U103B + U1031    // ေျ -> ျေ
+U1031 + U103C => U103C + U1031    // ေြ -> ြေ
+U1031 + U103D => U103D + U1031    // ေွ -> ွေ
+U1031 + U103E => U103E + U1031    // ေှ -> ှေ
+
+// Western Pwo Karen tone combinations
+U1069 + U103A => U1069 + U103A    // ၩ်
+U106A + U103A => U106A + U103A    // ၪ်
+U106B + U103A => U106B + U103A    // ၫ်
+U106C + U103A => U106C + U103A    // ၬ်
+U106D + U103A => U106D + U103A    // ၭ်
+
+// Common Western Pwo Karen words (commented as demo template)
+// 'karen' => U1000 + U102C + U101B + U1004 + U103A      // ကာရင်
+// 'pwo' => U1015 + U103D + U1031 + U102C                // ပွေါ
+// 'kawthoolei' => U1000 + U1031 + U102C + U1011 + U1030 + U101C + U102D  // ကေါထူလိ
+
+// Cultural and contextual terms (commented as demo template)
+// 'thoolei' => U1011 + U1030 + U101C + U102D            // ထူလိ
+// 'western' => U1031 + U102C + U1019 + U102D + U1038     // ေါမိး
+
+// // Numbers in context
+// '1st' => U1041 + 'st'
+// '2nd' => U1042 + 'nd'
+// '3rd' => U1043 + 'rd'
+// 
+// // Punctuation shortcuts
+// '...' => U002E + U002E + U002E    // ...
+// '---' => U2014                    // em dash
+// '--' => U2013                     // en dash
+
+// // Smart shortcuts and abbreviations for Western Pwo Karen
+// 'TYSM' => "Thank you so much"
+// 'tysm' => "thank you so much"
+// 'PWO' => "Pwo Karen"
+// 'pwo' => "pwo karen"
+// 'WESTERN' => "Western Pwo Karen"
+// 'western' => "western pwo karen"
+// 'KAWTHOOLEI' => "Kawthoolei"
+// 'kawthoolei' => "kawthoolei"
+// 
+// // Western Pwo Karen specific tone shortcuts
+// 'tone1' => U1069    // ၩ
+// 'tone2' => U106A    // ၪ
+// 'tone3' => U106B    // ၫ
+// 'tone4' => U106C    // ၬ
+// 'tone5' => U106D    // ၭ
+// 'pwa' => U1066      // ၦ
+// 'tha' => U1065      // ၥ
+// 'eu' => U1067       // ၧ
+// 'ue' => U1068       // ၨ
+// 
+// Auto-correct for Western Pwo Karen ligatures
+U103D + U103E => U103D + U103E    // ွှ (correct order)
+U101B + U103D + U103E => U101B + U103D + U103E    // ရွှ
+U101B + U103E + U102F => U101B + U103E + U102F    // ရှု
+U101B + U103E + U1030 => U101B + U103E + U1030    // ရှူ
