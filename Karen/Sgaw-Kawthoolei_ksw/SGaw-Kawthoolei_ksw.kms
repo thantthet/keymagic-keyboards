@@ -1,7 +1,7 @@
 /*
-@NAME = "Sgaw Karen (Kawthoolei)"
-@DESCRIPTION = "Sgaw Karen Kawthoolei keyboard layout with smart shortcuts and ligatures"
-@ICON = "ksw.png"
+@NAME = "SGaw Karen (Kawthoolei)"
+@DESCRIPTION = "SGaw Karen Kawthoolei keyboard layout with smart shortcuts and ligatures"
+@ICON = "SGaw.jpg"
 @TRACK_CAPSLOCK = "FALSE"
 @EAT_KEYS = "TRUE"
 @US_LAYOUT_BASED = "TRUE"
