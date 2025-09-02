@@ -1,7 +1,7 @@
 /*
-@NAME = "Sgaw Karen (Kawthoolei)"
-@DESCRIPTION = "Sgaw Karen Kawthoolei keyboard layout with smart shortcuts and ligatures"
-@ICON = "ksw.png"
+@NAME = "SGaw Karen (Kawthoolei)"
+@DESCRIPTION = "SGaw Karen Kawthoolei keyboard layout with smart shortcuts and ligatures"
+@ICON = "SGaw.jpg"
 @TRACK_CAPSLOCK = "FALSE"
 @EAT_KEYS = "TRUE"
 @US_LAYOUT_BASED = "TRUE"
@@ -76,7 +76,7 @@ $pwa_kepho = U1066 + U1064                  // ၦၤ
 <VK_KEY_C> => U1001    // ခ
 <VK_KEY_V> => U101C    // လ
 <VK_KEY_B> => U1018    // ဘ
-<VK_KEY_N> => U1009    // ည (changed from ဉ to match KLC)
+<VK_KEY_N> => U100A    // ည 
 // Special handling for M key based on KLC
 <VK_KEY_M> => U1065 + U103A    // ၥ် (tha + asat)
 
@@ -118,6 +118,8 @@ $pwa_kepho = U1066 + U1064                  // ၦၤ
 <VK_OEM_5> => U0027               // ' (\)
 <VK_OEM_1> => U1038               // း (;)
 <VK_OEM_7> => U104A               // ၊ (')
+<VK_OEM_4 & VK_SHIFT > => U1027   // ဧ ({)
+<VK_OEM_6 & VK_SHIFT > => U2606   // ☆ (})
 <VK_OEM_1 & VK_SHIFT> => U1012 + U102E + U1038  // ဒီး (:)
 <VK_OEM_7 & VK_SHIFT> => U104B    // ။ (")
 <VK_OEM_COMMA> => U101A           // ယ (,)
